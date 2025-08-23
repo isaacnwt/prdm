@@ -13,12 +13,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(amb.root)
 
-        amb.cliqueBt.setOnClickListener {
-            amb.contadorTv.text = (++counter).toString()
+        with(amb) {
+            setContentView(amb.root)
+
+            cliqueBt.setOnClickListener {
+                contadorTv.text = (++counter).toString()
+            }
+
+            inicialEt.addTextChangedListener{ p0 -> counter = p0.toString().toInt() }
         }
 
-        amb.inicialEt.addTextChangedListener{ p0 -> counter = p0.toString().toInt() }
+
     }
 }
