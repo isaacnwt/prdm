@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
                     activityMainBinding.conjugeLl.visibility = View.VISIBLE
                 } else {
                     activityMainBinding.conjugeLl.visibility = View.GONE
+                    activityMainBinding.nomeConjugeEt.setText("")
+                    activityMainBinding.sobrenomeConjugeEt.setText("")
                 }
             }
 
