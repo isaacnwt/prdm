@@ -26,8 +26,7 @@ class MainActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                val estadoCivilView = (view as TextView).text.toString()
-                if (estadoCivilView.equals("Casado(a)")) {
+                if (position == 1) {
                     activityMainBinding.conjugeLl.visibility = View.VISIBLE
                 } else {
                     activityMainBinding.conjugeLl.visibility = View.GONE
