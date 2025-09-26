@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/view_mi"
+        android:title="Abrir no Navegador TESTE"
+        android:icon="@android:drawable/ic_menu_view" />
+
+    <item
+        android:id="@+id/dial_mi"
+        android:title="Abrir Discador"
+        android:icon="@android:drawable/ic_menu_call" />
+
+    <item
+        android:id="@+id/pick_mi"
+        android:title="Escolher Contato"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+
+    <item
+        android:id="@+id/chooser_mi"
+        android:title="Abrir com..."
+        android:icon="@android:drawable/ic_menu_share" />
+
+</menu>
